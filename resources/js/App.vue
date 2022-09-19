@@ -18,4 +18,5 @@ export default {};
         <router-view></router-view>
     </div>
 </template>
-https://www.laravelcode.com/post/laravel-8-crud-operation-with-vuejs
+<!--https://www.laravelcode.com/post/laravel-8-crud-operation-with-vuejs-->
+

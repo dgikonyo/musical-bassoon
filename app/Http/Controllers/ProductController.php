@@ -20,7 +20,7 @@ class ProductController extends Controller
             'detail' => $request->input('detail')
         ]);
         $product->save();
-        return response()->json('Product created!');
+        return response()->json($product, 201);
     }
 
     public function show($id)
@@ -33,12 +33,12 @@ class ProductController extends Controller
     {
         $product = Product::find($id);
         $product->update($request->all());
-        return response()->json('Product Updated!');
+        return response()->json($product, 200);
     }
 
     public function destroy($id){
         $product = Product::find($id);
         $product->delete();
-        return response()->json('Product deleted!');
+        return response()->json(null, 204);
     }
 }
