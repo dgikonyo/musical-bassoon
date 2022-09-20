@@ -5,7 +5,7 @@ export default {
     },
     created() {
         this.axios
-            .get("http://localhost:8000/api/products/${this.$route.params.id}")
+            .get("/api/products/${this.$route.params.id}")
             .then((response) => {
                 this.products = response.data;
             });
@@ -14,7 +14,7 @@ export default {
         updateProduct() {
             this.axios
                 .patch(
-                    "http://localhost:8000/api/products/${this.$route.params.id}",
+                    "/api/products/${this.$route.params.id}",
                     this.products
                 )
                 .then((response) => {

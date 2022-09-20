@@ -6,7 +6,7 @@ export default {
     methods: {
         addProduct() {
             this.axios
-                .post("http://localhost:8000/api/products", this.products)
+                .post("/api/products", this.products)
                 .then(response => this.$router.push({ name: 'home' }))
                 .catch((err) => console.log(err))
                 .finally(() => (this.loadin = false));

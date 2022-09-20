@@ -14,6 +14,7 @@ use App\Http\Controllers\ProductController;
 |
 */
 //Route::get('/all/products', [ProductController::class, 'getProducts']);
-Route::get('{any}', function(){
-    return view('app');
-})->where('any', '.*');
+
+// Route::get('{any}', function(){
+//     return view('app');
+// })->where('any', '.*');

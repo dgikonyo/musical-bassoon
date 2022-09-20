@@ -34,6 +34,4 @@ class Handler extends ExceptionHandler
     {
         //
     }
-
-    public
 }

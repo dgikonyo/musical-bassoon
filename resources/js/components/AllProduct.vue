@@ -12,7 +12,7 @@ export default {
     },
     methods: {
         getProducts() {
-            axios.get("api/products").then((response) => {
+            axios.get("/api/products").then((response) => {
                 this.products = response.data;
             });
         },
